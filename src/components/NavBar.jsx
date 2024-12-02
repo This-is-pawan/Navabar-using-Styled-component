@@ -14,6 +14,11 @@ const NavCenter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.span`
@@ -24,6 +29,13 @@ const Logo = styled.span`
 const NavLinks = styled.div`
   display: flex;
   gap: 20px;
+  transition:all 2s ease;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -34,7 +46,6 @@ const StyledNavLink = styled(NavLink)`
 
   &.active {
     font-weight: bold;
-    /* text-decoration: underline; */
     color: blue;
   }
 
