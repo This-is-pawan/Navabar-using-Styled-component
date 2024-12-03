@@ -1,9 +1,18 @@
-import React from 'react'
+import Wrappsers from '../assets/Wrappers/ErrorPage'
+import { Link,useRouteError } from 'react-router-dom'
+console.log(Link);
 
-const Error = () => {
-  return (
-    <h2>Error</h2>
-  )
+
+const Error=()=>{
+ const error = useRouteError()
+ console.log(error);
+ if (error.status === 404) {
+ return <Wrappsers>
+  
+  
+ </Wrappsers>
+ }
+ return <h1>Error</h1>
+
 }
-
 export default Error

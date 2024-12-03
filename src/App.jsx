@@ -1,6 +1,6 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+// import Error from "./Error";
 import { Children } from "react";
 import {
   About,
@@ -10,15 +10,17 @@ import {
   Cocktail,
   Newsletter,
 } from "./pages";
-
+import { loader as ladingLoader} from "./pages/Landing";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
+    errorElement:<Error/>,
     children: [
       {
         path: "landing",
         element: <Landing />,
+        loader:ladingLoader,
       },
       {
         path: "cocktail",

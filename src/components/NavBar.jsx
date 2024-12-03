@@ -24,6 +24,7 @@ const NavCenter = styled.div`
 const Logo = styled.span`
   font-size: 1.5rem;
   font-weight: bold;
+  color: green;
 `;
 
 const NavLinks = styled.div`

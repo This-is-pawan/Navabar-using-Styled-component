@@ -1,8 +1,14 @@
-// import React from 'react'
-
+import { Outlet } from "react-router-dom"
+import NavBar from "./components/NavBar"
 const HomeLayout = () => {
   return (
-    <h1>HomeLayout</h1>
+  <>
+  <NavBar/>
+  <section className="page">
+    <Outlet/>
+
+  </section>
+  </>
   )
 }
 

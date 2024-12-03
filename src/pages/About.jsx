@@ -1,14 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-Link
+import React from 'react';
+import Wrappers from '../assets/Wrappers/AboutPage';
+
 const About = () => {
   return (
-   <div>
-   <h2> HomeLayout</h2>
-   <Link to='/'>Home page</Link>
+    <Wrappers>
+      <h3>Home</h3>
+    </Wrappers>
+  );
+};
 
-    </div>
-  )
-}
-
-export default About
+export default About;
